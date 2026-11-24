@@ -1,0 +1,14 @@
+@import 'tailwindcss';
+@import 'tailwind-animations';
+@theme {
+  --font-poppins: 'Poppins', sans;
+  --font-robotomono: 'Roboto Mono', sans;
+  --color-charcoal: #11171b;
+  --color-forest: #2f8d2d;
+  --color-green: #239b27;
+  --color-offwhite: #f7f8fa;
+  --color-white: #ffffff;
+  --color-nearblack: #111827;
+  --color-slate: #4b5563;
+  --color-grey: #e5e7eb;
+}
