@@ -10,7 +10,7 @@ export default function Home() {
   });
   if (isPending) return <Spinner />;
   return (
-    <div className="px-5 py-15 md:grid md:grid-cols-3 md:gap-15 space-y-6 w-full ">
+    <div className="px-5 py-15 md:grid md:grid-cols-3 md:gap-15 justify-items-center space-y-6 w-full max-w-7xl mx-auto">
       {tours?.tours.map((tour) => (
         <TourCard key={tour.id} tour={tour} />
       ))}

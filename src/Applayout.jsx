@@ -7,7 +7,8 @@ export default function Applayout() {
       <header>
         <Navbar />
       </header>
-      <main className="overflow-y-auto max-w-500 mx-auto">
+
+      <main className="overflow-y-auto w-full">
         <Outlet />
       </main>
     </div>

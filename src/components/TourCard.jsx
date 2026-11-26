@@ -5,7 +5,6 @@ import { formatCurrency } from '../utils/helpers';
 import { Link, useNavigate } from 'react-router-dom';
 export default function TourCard({ tour }) {
   const {
-    description,
     difficulty,
     duration,
     locations,
@@ -17,8 +16,8 @@ export default function TourCard({ tour }) {
     price,
     ratingsAverage,
     ratingsQuantity,
+    startLocation,
     startDates,
-    startLocation: { description: location },
     summary,
   } = tour;
   const navigate = useNavigate();
@@ -55,7 +54,7 @@ export default function TourCard({ tour }) {
           <p className="text-xs font-semibold text-slate italic">{summary}</p>
         </div>
         <div className="text-slate grid grid-cols-2 gap-2 py-4">
-          <Icon icon={MapPin}>{location}</Icon>
+          <Icon icon={MapPin}>{startLocation.description}</Icon>
           <Icon icon={CalendarRange}>
             {format(startDates.at(0), 'dd MMM yyy')}{' '}
           </Icon>
